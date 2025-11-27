@@ -1,0 +1,82 @@
+variable
+data type
+
+Category	    Keywords
+
+Control Flow	( if, elif, else, for, while, break, continue, pass, return, yield )
+Logical	        ( and, or, not, in, is )
+Definition	    ( def, class, lambda, global, nonlocal )
+Exception	    ( try, except, finally, raise, assert )
+Import	        ( import, from, as )
+Values	        ( True, False, None )
+Async	        ( async, await )
+Misc	        ( with, del )
+
+1. Arithmetic Operators
+Used for mathematical calculations.
+
+Operator	Description	            Example
++	        Addition	            5 + 3 = 8
+-	        Subtraction	            10 - 4 = 6
+*	        Multiplication	        6 * 2 = 12
+/	        Division	            8 / 2 = 4.0 (float result)
+%	        Modulus (remainder)	    10 % 3 = 1
+**	        Exponent (power)	    2 ** 3 = 8
+//	        Floor division	        7 // 2 = 3
+
+2. Assignment Operators
+Used to assign values to variables.
+
+Operator	        Example	    Meaning
+=	                x = 5	    Assign
++=	                x += 3	    x = x + 3
+-=	                x -= 2	    x = x - 2
+*=	                x *= 4	    x = x * 4
+/=	                x /= 2	    x = x / 2
+%=	                x %= 3	    x = x % 3
+**=	                x **= 2	    x = x ** 2
+//=	                x //= 3	    x = x // 3
+
+3. Comparison Operators
+Used to compare values (result: True or False).
+
+Operator	        Meaning	            Example
+==	                Equal to	        5 == 5 → True
+!=	                Not equal to	    5 != 3 → True
+>	                Greater than	    7 > 2 → True
+<	                Less than	        3 < 5 → True
+>=	                Greater or equal	5 >= 5 → True
+<=	                Less or equal	    4 <= 6 → True
+
+4. Logical Operators
+Used to combine conditions.
+
+Operator	    Meaning	                        Example
+and	            Both conditions must be true	(5 > 2 and 3 < 6) → True
+or	            At least one condition true	    (5 > 10 or 4 > 1) → True
+not	            Reverses Boolean value	        not True → False
+
+5. Bitwise Operators
+Operate on binary numbers.
+
+Operator	Meaning
+&           AND
+`	        `
+^	        XOR
+~	        NOT
+<<	        Left shift
+>>	        Right shift
+
+
+6. Membership Operators
+
+Operator	Meaning	                            Example
+in	        True if value exists	            "a" in "apple" → True
+not in	    True if value does NOT exist	    "x" not in "apple" → True
+
+
+7. Identity Operators
+
+Operator	Meaning	                                    Example
+is	        Checks if variables refer to same object	x is y
+is not	    Checks if they are different objects	    x is not y
