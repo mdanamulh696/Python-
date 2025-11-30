@@ -97,3 +97,5 @@
 
 # grade.sort()
 # print(grade)
+
+# Lecture 3 done
