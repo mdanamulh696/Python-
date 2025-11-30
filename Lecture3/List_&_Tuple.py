@@ -89,11 +89,11 @@
 # else:
 #     print("Not Palimdrome")
 
-# write a program to count the number of students with the "A" grade in the following tuple.
+# # write a program to count the number of students with the "A" grade in the following tuple.
 
-grade = ["C", "D", "A", "A", "B", "B", "A" ]
-grade.count("A")
-print(grade.count("A"))
-print()
-grade.sort()
-print(grade)
+# grade = ["C", "D", "A", "A", "B", "B", "A" ]
+# grade.count("A")
+# print(grade.count("A"))
+
+# grade.sort()
+# print(grade)
