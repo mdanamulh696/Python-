@@ -1,136 +1,136 @@
-# Dictionary in Python
-info ={
-    "ID" : 1035596,
-    "Name" : "Md Anamul Haque",
-    "Subject" :["python", "numpay", "panda"],
-    "Topic" : ("Dictionary", "Set"),
-    "Age" : 30,
-    "Marks" : 94.5
-}
-print(info)
-print(info["Subject"])
-print(info["Topic"])
+# # Dictionary in Python
+# info ={
+#     "ID" : 1035596,
+#     "Name" : "Md Anamul Haque",
+#     "Subject" :["python", "numpay", "panda"],
+#     "Topic" : ("Dictionary", "Set"),
+#     "Age" : 30,
+#     "Marks" : 94.5
+# }
+# print(info)
+# print(info["Subject"])
+# print(info["Topic"])
 
-info["Name"] = "Sadia Haque"
-print(info)
-info["Subject"] = "pytorch"
-print(info)
-
-
-# nested dictionary
-student = {
-    "name" : "sadia akter",
-    "subject" : {
-        "phy":  97,
-        "chem": 98,
-        "math": 95
-
-    }
-}
+# info["Name"] = "Sadia Haque"
+# print(info)
+# info["Subject"] = "pytorch"
+# print(info)
 
 
-print(student)
-print(student["subject"])             # specific key value print
-print(student["subject"]["chem"])     # specific value print
+# # nested dictionary
+# student = {
+#     "name" : "sadia akter",
+#     "subject" : {
+#         "phy":  97,
+#         "chem": 98,
+#         "math": 95
 
-# Dictionary Methods
+#     }
+# }
 
-# myDict.keys( )              #returns all keys 
-# myDict.values( )            #returns all values 
-# myDict.items( )             #returns all (key, val) pairs as tuples
-# myDict.get( “key““ )        #returns the key according to value 
-# myDict.update({newDict} )    #inserts the specified items to the dictionary
 
-print(student.keys())                 
-print(list(student.keys()))           # type cast
-print(student.values())
-print(student.items())                 
-print(student["name"])
-print(student.get("name"))              # no error -> none
+# print(student)
+# print(student["subject"])             # specific key value print
+# print(student["subject"]["chem"])     # specific value print
 
-student.update ({"city":"duisburg"})
-student["subject"]["biology"] = 90      # add new value in nested dictionary
-print(student)
+# # Dictionary Methods
 
-# Set in python
-# unordered , unique(ignor duplicate value) & element immutable(unchanged)
+# # myDict.keys( )              #returns all keys 
+# # myDict.values( )            #returns all values 
+# # myDict.items( )             #returns all (key, val) pairs as tuples
+# # myDict.get( “key““ )        #returns the key according to value 
+# # myDict.update({newDict} )    #inserts the specified items to the dictionary
 
-collection = {"hello", 1, 7, 3, 4, "hi", "hi", 5, 5}
-print(collection)
-collection1 = set() #empty set; syntax
-print(collection1)
+# print(student.keys())                 
+# print(list(student.keys()))           # type cast
+# print(student.values())
+# print(student.items())                 
+# print(student["name"])
+# print(student.get("name"))              # no error -> none
 
-# Set Methods
+# student.update ({"city":"duisburg"})
+# student["subject"]["biology"] = 90      # add new value in nested dictionary
+# print(student)
 
-# set.add( el )         #adds an element 
-# set.remove( el )      #removes the elem an
-# set.clear( )          #empties the set 
-# set.pop( )            #removes a random value 
+# # Set in python
+# # unordered , unique(ignor duplicate value) & element immutable(unchanged)
 
-collection1.add(9)
-collection1.add(8)
-collection1.add(7)
-print(collection1)
+# collection = {"hello", 1, 7, 3, 4, "hi", "hi", 5, 5}
+# print(collection)
+# collection1 = set() #empty set; syntax
+# print(collection1)
 
-collection.remove(2)
-print(collection)
+# # Set Methods
 
-collection.clear()
-print(collection)
+# # set.add( el )         #adds an element 
+# # set.remove( el )      #removes the elem an
+# # set.clear( )          #empties the set 
+# # set.pop( )            #removes a random value 
 
-collection.update('6')
-print(collection)
+# collection1.add(9)
+# collection1.add(8)
+# collection1.add(7)
+# print(collection1)
 
-collection.discard("hi")
-print(collection)
+# collection.remove(2)
+# print(collection)
 
-print(collection.union(collection1))
+# collection.clear()
+# print(collection)
 
-print(collection.intersection(collection1))
+# collection.update('6')
+# print(collection)
 
-# Let‘s Practice
+# collection.discard("hi")
+# print(collection)
 
-# Store following word meanings in a python dictionary : 
+# print(collection.union(collection1))
 
-# table : “a piece of furniture”, “list of facts & figures”
-# cat : “a small animal”
+# print(collection.intersection(collection1))
 
-dictionary = {
-    "table" : ["a piece of furniture","list of facts & figures" ],
-    "cat" : "a small animal"
-}
-print(dictionary)
+# # Let‘s Practice
 
-# You are given a list of subjects for students. Assume one classroom is required for 1 subject.
-# How many classrooms are needed by all students.
+# # Store following word meanings in a python dictionary : 
 
-# ”python”, “java”, “C++”, “python”, 
-# “javascript”,“java”, “python”, “java”, “C++”, “C”
+# # table : “a piece of furniture”, “list of facts & figures”
+# # cat : “a small animal”
 
-subjects = {
-    "python", "java", "c++", "python", 
-    "javascript","java","python", "java", "c++", "c"
+# dictionary = {
+#     "table" : ["a piece of furniture","list of facts & figures" ],
+#     "cat" : "a small animal"
+# }
+# print(dictionary)
+
+# # You are given a list of subjects for students. Assume one classroom is required for 1 subject.
+# # How many classrooms are needed by all students.
+
+# # ”python”, “java”, “C++”, “python”, 
+# # “javascript”,“java”, “python”, “java”, “C++”, “C”
+
+# subjects = {
+#     "python", "java", "c++", "python", 
+#     "javascript","java","python", "java", "c++", "c"
     
-}
+# }
 
-print(subjects)
-print(len(subjects))
+# print(subjects)
+# print(len(subjects))
 
-# WAP to enter marks of 3 subjects from the user and store them in a dictionary. 
-# Start withan empty dictionary & add one by one. 
-# Use subject name as key & marks as value.
+# # WAP to enter marks of 3 subjects from the user and store them in a dictionary. 
+# # Start withan empty dictionary & add one by one. 
+# # Use subject name as key & marks as value.
 
-marks = {}
+# marks = {}
 
-x= int(input("enter phy: "))
-marks.update({"phy" : x})
+# x= int(input("enter phy: "))
+# marks.update({"phy" : x})
 
-x= int(input("enter math: "))
-marks.update({"math" : x})
+# x= int(input("enter math: "))
+# marks.update({"math" : x})
 
-x= int(input("enter chem: "))
-marks.update({"chem" : x})
+# x= int(input("enter chem: "))
+# marks.update({"chem" : x})
 
-print(marks)
+# print(marks)
 
  
